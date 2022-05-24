@@ -6,13 +6,17 @@ function onFormSubmit(event){
 	const formElements = event.currentTarget.elements;
 	const mail = formElements.email.value;
 	const password = formElements.password.value;
-	const formDate = {
-		mail,
-		password,
+	
+
+	if (mail === '' || password === '') {
+		alert('Всі поля повинні бути заповнені');
+	}
+		else {
+			const formDate = {
+				mail,
+				password,
+			};
+			console.log(formDate);
+		};
+		form.reset();
 	};
-
-	console.log(formElements);
-	console.log(`це submit форми`);
-	console.log(formDate);
-
-}
