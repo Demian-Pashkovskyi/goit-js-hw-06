@@ -19,7 +19,6 @@ const ingredients = [
 // });
 // console.log(list);
 
-
 // const list = document.querySelector(`#ingredients`);
 // const elements = [];
 // for (let i = 0; i < ingredients.length; i +1) {
@@ -27,7 +26,6 @@ const ingredients = [
 // 	const navEl = document.createElement(`li`);
 // 	navEl.classList.add("item");
 // 	navEl.textContent = option;
-	
 // }	
 
 // console.log(elements);
@@ -40,7 +38,6 @@ const elements = ingredients.map(option => {
 	navEl.textContent = option;
 
 	return navEl;
-
 });
 
 console.log(list);
