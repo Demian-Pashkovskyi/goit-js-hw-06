@@ -17,6 +17,6 @@ function onFormSubmit(event){
 				password,
 			};
 			console.log(formDate);
+			form.reset();
 		};
-		form.reset();
 	};

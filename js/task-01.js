@@ -1,13 +1,10 @@
 
-const navEl = document.querySelector(`ul#categories`);
-// console.log(navEl);
-// console.log(navEl.children);
-console.log(`Number of categories:`, navEl.children.length);
-console.log(`Category:`, navEl.children[0].firstElementChild.textContent);
-console.log(`Elements:`,navEl.children[0].lastElementChild.children.length);
-console.log(`Category:`, navEl.children[1].firstElementChild.textContent);
-console.log(`Elements:`,navEl.children[1].lastElementChild.children.length);
-console.log(`Category:`, navEl.children[2].firstElementChild.textContent);
-console.log(`Elements:`,navEl.children[2].lastElementChild.children.length);
 
+const totalCategories = document.querySelectorAll(".item");
+console.log(`Number of categories: ${totalCategories.length}`);
 
+for (const item of totalCategories) {
+	console.log(`Category: ${item.firstElementChild.textContent}`);
+	const countItems = item.querySelectorAll("li").length;
+	console.log(`Elements: ${countItems}`);
+}
